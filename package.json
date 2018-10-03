@@ -1,8 +1,10 @@
 {
   "scripts": {
     "api": "node ratingsAPI.js",
+    "build": "webpack",
     "format": "prettier --single-quote --print-width=120 --parser=flow --tab-width=2 --write \"js/*.{js,jsx}\"",
-    "lint": "./node_modules/.bin/eslint eslint '**/*.{js,jsx}' --fix"
+    "lint": "eslint '**/*.{js,jsx}' --fix",
+    "watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.16.1",
